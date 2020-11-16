@@ -1,21 +1,25 @@
 
-
 .header {padding: 50px 0 70px 0; 
 		margin-bottom: 10px;
          background-image: url('../images/header2.webp');
          background-size: cover; 
          color: #FFF;
-         margin-bottom: 100px;}
+         margin-bottom: 50px;
+         font-size:20px;
+         }
 
 body {background-color: black;}
 
-.one-half.column h4 {font-size: 45px;}
+.one-half.column h4 {font-size: 45px;
+}
 
-.one-half.column p {font-size: 17px;}
+.one-half.column p {font-size: 17px;
+}
 
 img {float:left;
 padding-right: 10px;
-padding-left: 5px;}
+padding-left: 5px;
+}
 
 .six.columns {
 	border: 2px solid black;
@@ -25,13 +29,14 @@ padding-left: 5px;}
 	color: #FFF;
 }
 
-.six.columns h4 {font-size: 22px;
+.six.columns h4 {font-size: 25px;
 				padding-left: 3px;
 				padding-right: 2px;
 				}
 
 .six.columns p {padding-left: 3px;
-				margin-top: 15px;}
+				margin-top: 15px;
+				font-size: 20px;}
 
 .twelve.columns {margin-top: 5px;
 	             text-align: center;
@@ -39,137 +44,148 @@ padding-left: 5px;}
 	             padding-top: 15px;
 	      		}
 
+.slideshow-header h2 {text-align: center;
+				     font-size: 25px;
+				     padding-bottom: 10px;}
 
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
 
-/* new CSS 
-slideshow */
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
 }
 
-.mySlides img {
-       max-height:300px;
-       margin-top: 10%;
-      }
-
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
- .mySlides.fade img {padding-top:50px;}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 25px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  max-width: 100%;
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 50rem;
+  color: black;
+}
+
+.carousel-caption{text-align: center;
+}
+
+.carousel-caption h1 {color: black;}
+
+.carousel-caption p {color: black;}
+
+.carousel-indicators li {
+  background-color: #000;
+}
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+.carousel-item > img {
   position: absolute;
   top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+  padding-bottom: 55px;
 }
 
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+
+/********* Mobile first queries **************/
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+	max-width: 100%;
+	text-align: center;}
+
+ .carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 42rem;
+  padding-bottom: 55px;
+} 
+
+.carousel-caption h1 {text-align: center;}
 }
 
-.active, .dot:hover {
-  background-color: #717171;
+.carousel-item {
+  height: 50rem;
+  max-width: 80%;
+
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+
+  }
+
+/************************** Larger than mobile *****************************/
+/* @media (min-width: 400px) {
+carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 80%;
+  height: 42rem;
+  padding-bottom: 45px;
 }
 
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
+.carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+	max-width: 100%
+} */
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* end */
-
-
-/* Mobile first queries */
-
-/* Larger than mobile */
-@media (min-width: 400px) {
-.mySlides img {
-       max-height: 500px;
-       margin-top: 10%;
-      }
-}
-
-/* Larger than phablet */
+/**************************** Larger than phablet ***********************/
 @media (min-width: 550px) {
+
+}
+/************************ DESKTOP Larger than tablet **************************/
+/* DO NOT CHANGEEEEEEEEEEEEEEEEEEE */
+
+@media (min-width: 750px) {
+
 }
 
-/* Larger than tablet */
-@media (min-width: 750px) {}
+/**************************** Larger than desktop ***********************************/
+@media (min-width: 1000px) {
 
-/* Larger than desktop */
-@media (min-width: 1000px) {}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 58rem;
+  padding-bottom: 39px;
+  padding-top: 5px;
+}
 
-/* Larger than Desktop HD */
-@media (min-width: 1200px) {}
+.carousel-item {
+  height: 70rem;
+  max-width: 100%;
+}
+
+.carousel-caption h1 {text-align: center;}
+}
+
+.carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+	max-width: 100%;
+	padding-top: -20px;
+	text-align: center;
+}
+}
