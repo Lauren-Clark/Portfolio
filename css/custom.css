@@ -13,6 +13,7 @@ body {background-color: black;}
 .one-half.column h4 {font-size: 45px;
 }
 
+
 .one-half.column p {font-size: 17px;
 }
 
@@ -39,6 +40,7 @@ padding-left: 5px;
 				font-size: 20px;}
 
 .twelve.columns {margin-top: 5px;
+		font-size: 15px;
 	             text-align: center;
 	             font-style: italic;
 	             padding-top: 15px;
