@@ -6,13 +6,26 @@
          color: #FFF;
          margin-bottom: 50px;
          font-size:20px;
+         margin-top: -20px;
          }
 
 body {background-color: black;}
 
+
+/* new */
+
+a.nav-link {font-size: 20px;}
+
+span.navbar-text {font-size: 15px;}
+
+a.navbar-brand.active {font-size: 25px;}
+
+/******************** NAVIGATION BAR *****************/
+
+.navbar .navbar-link a {font-size: 20px;}
+
 .one-half.column h4 {font-size: 45px;
 }
-
 
 .one-half.column p {font-size: 17px;
 }
@@ -40,10 +53,10 @@ padding-left: 5px;
 				font-size: 20px;}
 
 .twelve.columns {margin-top: 5px;
-		font-size: 15px;
 	             text-align: center;
 	             font-style: italic;
-	             padding-top: 20px;
+	             padding-top: 15px;
+	             font-size: 15px;
 	      		}
 
 .slideshow-header h2 {text-align: center;
